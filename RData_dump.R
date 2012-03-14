@@ -1,7 +1,3 @@
-
-## Pfad setzen
-#setwd("C:/Users/ahschulz/Dropbox/R/enron")
-
 ## Bibs laden
 library(igraph)
 library(RMySQL)

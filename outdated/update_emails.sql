@@ -1,4 +1,5 @@
-## message updaten!!
+# Changes already saved in the mysqldump!
+# DO NOT USE!
 
 update message set sender = 'andrew.h.lewis@enron.com' where sender = 'h..lewis@enron.com';
 update message set sender = 'andy.zipper@enron.com' where sender = 'azipper@enron.com';
