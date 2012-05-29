@@ -22,6 +22,7 @@ edges$type <- as.factor(edges$type)
 edges$date <- as.Date(edges$date)
 edges$count <- as.numeric(edges$count)
 
+nodes$status[is.na(nodes$status)] <- "N/A"
 
 ## make network
 network <- graph.data.frame(edges, directed = T, vertices = nodes)

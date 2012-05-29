@@ -14,7 +14,7 @@
     <node id="n0">
       <data key="name">marie.heard@enron.com</data>
       <data key="lastName">Heard</data>
-      <data key="status">NA</data>
+      <data key="status">N/A</data>
     </node>
     <node id="n1">
       <data key="name">mark.e.taylor@enron.com</data>
