@@ -4,6 +4,7 @@ setwd("C:/Users/ahschulz/Dropbox/R/enron")
 ## Library laden
 library(igraph)
 library(RColorBrewer)
+library(gplots)
 
 ## Laden
 load("data/enron.RData")
@@ -87,16 +88,16 @@ for (i in netze) {
 }
 
 
-## alle Plots in einer Grafik
+## all plots in one graphic
 
 set.seed(13)
 
 netze <- c("n_all", "n_to", "n_cc", "n_bcc")
 main <- c("All emails", "TO emails", "CC emails", "BCC emails")
-count <- c(1)
 
-pdf(file = "alle.pdf", width = 10, height = 10,pointsize=14)
-#png(file = "alle.png", width = 1200, height = 1200)
+
+cairo_pdf(file = "all.pdf", width = 10, height = 10,pointsize=14)
+#png(file = "all.png", width = 1200, height = 1200)
 par(bg = "grey60", mar = c(1,1,1,1), oma= c(1,1,1,1))
 layout(matrix(c(1,2,3,4,5,5), 3, 2, byrow = T), height = c(4,4,1))
 #layout.show(5)
@@ -112,7 +113,6 @@ for (i in netze) {
        vertex.label = NA, vertex.size = 3+3*log10(V(temp)$degree),
        edge.arrow.size = E(temp)$count/150, edge.width = 1.25*log10(E(temp)$count), edge.color = E(temp)$color, edge.curved = T)
   
-  count <- count + 1
 }
 
 plot.new()

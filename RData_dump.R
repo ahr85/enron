@@ -2,7 +2,7 @@
 library(igraph)
 library(RMySQL)
 
-con <- dbConnect(MySQL(), host="localhost", user="root", password="domoke74", dbname="enron")
+con <- dbConnect(MySQL(), host="localhost", user="test", password="testtest", dbname="enron")
 
 ## alles nach R
 employeelist <- dbGetQuery(con,
