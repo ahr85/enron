@@ -1,3 +1,6 @@
 Project for Visualizing the enron maildata.
 
+It uses igraph for plotting network graphics and shiny to make an interactive interface.
+
 This file does not include the data itself (too big). It can be downloaded under: http://www.ahschulz.de/enron-email-data/
+
