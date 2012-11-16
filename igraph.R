@@ -1,6 +1,3 @@
-## Verzeichnis setzen
-setwd("C:/Users/ahschulz/Dropbox/R/enron")
-
 ## Library laden
 library(igraph)
 library(RColorBrewer)
@@ -120,3 +117,6 @@ legend("bottom", legend = unique(V(network)$status), col = vertex_col, pch = 19,
 
 dev.off()
 
+
+## save networks
+save(n_all, n_to, n_cc, n_bcc, file= "data/networks.RData")
