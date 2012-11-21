@@ -18,6 +18,9 @@ shinyUI(
                     min = 14, max = 500, value = c(14, 500)),
       helpText("All edge weights (sent emails between two persons) below 14 were removed to provide more clarity."),
       
+      # SubmitButton - to avoid to much load on shiny server (glimmer.rstudio.com)
+      submitButton("Apply Changes"),
+      
       # Legend
       h4("Legend"),
       img(src = "legend.png")

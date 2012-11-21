@@ -3,7 +3,7 @@ library(igraph)
 library(gplots)
 
 # load data
-load("../data/networks.RData")
+load("data/networks.RData")
 
 shinyServer(
   function(input, output) {
